@@ -40,7 +40,7 @@ public class UkrLawsAssistantConfig {
         return AiServices.builder(UkrLawsAssistant.class)
                 .streamingChatLanguageModel(streamingChatLanguageModel)
                 .chatLanguageModel(chatLanguageModel)
-                .chatMemory(MessageWindowChatMemory.withMaxMessages(1)) //maximum amount of previous questions from user and answers that will be passed with request to AI
+                .chatMemory(MessageWindowChatMemory.withMaxMessages(20)) //maximum amount of previous questions from user and answers that will be passed with request to AI
                 .contentRetriever(
                         createContentRetriever(
                                 documents,
