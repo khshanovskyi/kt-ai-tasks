@@ -21,6 +21,12 @@ import static dev.langchain4j.data.document.loader.FileSystemDocumentLoader.load
 @Configuration
 public class InterviewAssistantConfig {
 
+    /**
+     * Creates bean of {@link InterviewAssistant}. Under the hood will be created a proxy that will have all AI components.
+     * If you acknowledged with 'chains' from langchain - its alternative of them
+     *
+     * @see LangchaingConfig
+     */
     @Bean
     InterviewAssistant interviewAssistant(ChatLanguageModel chatLanguageModel,
                                         EmbeddingModel embeddingModel) throws URISyntaxException {
