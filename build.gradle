@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('springAiVersion', "1.0.0-M2")
+}
+
+dependencies {
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
