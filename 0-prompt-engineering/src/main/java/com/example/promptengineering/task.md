@@ -1,6 +1,6 @@
 ## Task:
 
-### Before start install Ollama `https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image`
+### Before start install Ollama [Link](https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image)
 - If you are using Mac download and install it. 
 - From Win/Linux you can run it in docker `docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama`
 ### Run Ollama3.1
