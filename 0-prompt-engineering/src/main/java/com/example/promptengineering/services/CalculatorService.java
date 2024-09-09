@@ -1,4 +1,4 @@
-package com.example.promptengineering.Services;
+package com.example.promptengineering.services;
 
 import dev.langchain4j.agent.tool.Tool;
 import org.springframework.stereotype.Service;
