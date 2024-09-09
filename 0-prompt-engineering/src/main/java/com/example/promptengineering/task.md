@@ -29,3 +29,6 @@
    - Run Application
    - Test it via Postman. `localhost:8080/v1/interview/chat?question=<Your question>`
    - **Optional:** take a look at the code (`InterviewAssistantConfig`)
+
+
+[Read more](https://medium.com/@springs_apps/prompt-engineering-examples-and-best-practices-82b1da724643)
